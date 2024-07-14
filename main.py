@@ -56,15 +56,20 @@ while True:
   if user_option == computer_option:
     print("It's a tie!")
     restart()
+    continue
   elif user_option == "Rock 🪨" and computer_option == "Scissors ✂️":
     print(f"You win! {user_option} beats {computer_option}")
     restart()
+    continue
   elif user_option == "Paper 📄" and computer_option == "Rock 🪨":
     print(f"You win! {user_option} beats {computer_option}")
     restart()
+    continue
   elif user_option == "Scissors ✂️" and computer_option == "Paper 📄":
     print(f"You win! {user_option} beats {computer_option}")
     restart()
+    continue
   else:
     print(f"You lose! {computer_option} beats {user_option}")
     restart()
+    continue
